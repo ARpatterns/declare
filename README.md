@@ -6,7 +6,7 @@
 
 Video?
 
-Link: [Ahead Staging](aheadStaging)
+Link: [Ahead Staging](AheadStaging)
 
 ## ARchi Composer
 
