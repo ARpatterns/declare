@@ -12,9 +12,9 @@ _Behavior_
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the staging ahead action
 
 _Augmentation_
-* [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting 3D object `red.box`1.5 m  in front of the user
-  * Placed: initial ahead of the user on the floor
-  * Aligned: initial towards the user in view direction 
+* [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting 3D object `red.box`1.5 m  in front of the user.
+  * Placed: initial ahead of the user on the floor.
+  * Aligned: initial towards the user in view direction.
 
 ### Diagram
 
@@ -141,8 +141,8 @@ _Behavior_
 * [Conditional Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/conditional-reaction.md): Pressing the overlay button (+) in the bottom right corner sets a data flag. If the data flag becomes the value of 1 the ECA rule is executing the ahead staging action that places the 3D object into the scene.
 
 _Augmentation_
-* [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): sdsdfdsff
-  * Placed: initial ahead of the user in different heights.
+* [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): placing virtual 3D object `wooden.chest` 1.5 m in front of the user on the floor.
+  * Placed: Placed: initial ahead of the user on the floor.
   * Aligned: initial towards the user in view direction.
 
 ### Diagram
