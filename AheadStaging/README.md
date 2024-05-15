@@ -12,7 +12,7 @@ _Behavior_
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the staging ahead action
 
 _Augmentation_
-* [Ahead Staging](../../catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting 3D object `red.box`1.5 m  in front of the user
+* [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting 3D object `red.box`1.5 m  in front of the user
   * Placed: initial ahead of the user on the floor
   * Aligned: initial towards the user in view direction 
 
@@ -57,10 +57,10 @@ _Augmentation_
 ### AR Patterns
 
 _Behavior_
-* [Instant Reaction](../../catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of a list of staging ahead actions.
+* [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of a list of staging ahead actions.
 
 _Augmentation_
-* [Ahead Staging](../../catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting three 3D objects 1.5 m in front of the user at differnt heights.
+* [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting three 3D objects 1.5 m in front of the user at differnt heights.
   * Placed: initial ahead of the user. The first on the floor, the others above it.
   * Aligned: initial towards the user in view direction. 
 
@@ -138,10 +138,10 @@ _Augmentation_
 ### AR Patterns
 
 _Behavior_
-* [Conditional Reaction](../../catalog/blob/main/behavioral-patterns/conditional-reaction.md): Pressing the overlay button (+) in the bottom right corner sets a data flag. If the data flag becomes the value of 1 the ECA rule is executing the ahead staging action that places the 3D object into the scene.
+* [Conditional Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/conditional-reaction.md): Pressing the overlay button (+) in the bottom right corner sets a data flag. If the data flag becomes the value of 1 the ECA rule is executing the ahead staging action that places the 3D object into the scene.
 
 _Augmentation_
-* [Ahead Staging](../../catalog/blob/main/augmentation-patterns/ahead-staging.md): sdsdfdsff
+* [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): sdsdfdsff
   * Placed: initial ahead of the user in different heights.
   * Aligned: initial towards the user in view direction.
 
@@ -205,4 +205,4 @@ _Augmentation_
 
 - ARchi VR [Technical Documentation](https://service.metason.net/ar/docu/)
 - ARchi VR [App](https://archi.metason.net)
-- AR Pattern [Diagram](../../diagram)
+- AR Pattern [Diagram]((https://github.com/ARpatterns/diagram)
