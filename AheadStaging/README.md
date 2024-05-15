@@ -205,4 +205,4 @@ _Augmentation_
 
 - ARchi VR [Technical Documentation](https://service.metason.net/ar/docu/)
 - ARchi VR [App](https://archi.metason.net)
-- AR Pattern [Diagram]((https://github.com/ARpatterns/diagram)
+- AR Pattern [Diagram](https://github.com/ARpatterns/diagram)
