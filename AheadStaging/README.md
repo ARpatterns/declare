@@ -9,7 +9,7 @@ Ahead staging is a technique for presenting 3D content in a way that it is align
 ### AR Patterns
 
 _Behavior_
-* [Instant Reaction](../../catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the staging ahead action
+* [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the staging ahead action
 
 _Augmentation_
 * [Ahead Staging](../../catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting 3D object `red.box`1.5 m  in front of the user
