@@ -24,7 +24,7 @@ The following scenarios of applied AR Patterns listed below are all provided as 
 
 ### Superimposition
 
-![Superimposition](screens/substitute.mp4)
+<img src="Superimposition/docs/images/screens.jpg" height="298">
 
 * _Project Link_: [Superimposition](Superimposition)
 
