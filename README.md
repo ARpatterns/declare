@@ -20,8 +20,6 @@ The following scenarios of applied AR Patterns listed below are all provided as 
 
 ### Ahead Staging
 
-<img src="AheadStaging/docs/images/screen1.jpg" width="180">  
-<img src="AheadStaging/docs/images/screen2.jpg" width="180"> 
 <img src="AheadStaging/docs/images/screen3.jpg" width="180">
 
 Presentation of 3D content ahead of user.
