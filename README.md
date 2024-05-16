@@ -14,7 +14,7 @@ The mobile [ARchi VR App](https://archi.metason.net) is avialbable for iOS devic
 ARchi Composer is a low-code editor for Mac to create dynamic and interactive AR content using the "DeclARe" scripting approach.
 The following scenarios of applied AR Patterns listed below are all provided as ARchi Composer projects. The sample scripts can be edited and live-injected to the ARchi VR App. The [ARchi Composer](https://service.metason.net/ar/docu/#archi-composer) is provided as free low-code editor. 
 
-
+---
 
 ## Scenarios of applied AR Patterns
 
@@ -28,7 +28,6 @@ Presentation of 3D content ahead of user.
 * _Agmentation Patterns_: Ahead Staging
 * _Project Link_: [Ahead Staging](AheadStaging)
 
----
 
 ### Staged Progression
 
