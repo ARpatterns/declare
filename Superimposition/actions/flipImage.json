@@ -1,0 +1,57 @@
+{
+  "$schema": "https://service.metason.net/ar/schemas/action.json",
+  "items" : [
+    {
+      "asset" : "$SERVER/images/JazzIsDown.jpg",
+      "attributes" : "wxdxh:0.29x0.0x0.4;",
+      "id" : "upsidedown.image",
+      "isLocked" : false,
+      "name" : "Image Panel",
+      "subtype" : "Panel",
+      "type" : "Spot",
+      "vertices" : [
+        [
+          0,
+          -0.2,
+          0
+        ]
+      ]
+    },
+    {
+      "attributes" : "wxdxh:0.29x0.0x0.4;y:-0.2;rx:-90;",
+      "children" : "upsidedown.image",
+      "id" : "detected.image.flipped",
+      "isLocked" : false,
+      "name" : "Detected Image",
+      "subtype" : "Group",
+      "type" : "Geometry",
+      "vertices" : [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    }
+  ],
+  "tasks" : [
+    {
+      "dispatch" : "atstart",
+      "do" : "skip",
+      "state" : "floor"
+    },
+    {
+      "do" : "detect",
+      "id" : "detected.image.flipped",
+      "height" : "0.40",
+      "img" : "$SERVER/images/JazzIsBack.jpg",
+      "op" : "say('Jazz is upside down')",
+      "width" : "0.29"
+    }
+  ]
+}

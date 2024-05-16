@@ -1,0 +1,84 @@
+{
+  "idPrefix" : "",
+  "sourceControl" : "",
+  "remoteServer" : "",
+  "desc" : "Superimpose flipped image on detected image ",
+  "name" : "superImposition",
+  "nodes" : [
+    {
+      "type" : "Project",
+      "name" : "Settings",
+      "children" : null,
+      "relPath" : "superImposition.arproject",
+      "comment" : ""
+    },
+    {
+      "name" : "README",
+      "comment" : "",
+      "children" : null,
+      "type" : "README",
+      "relPath" : "README.md"
+    },
+    {
+      "name" : "docs",
+      "relPath" : "docs/",
+      "type" : "Documents",
+      "comment" : "",
+      "children" : [
+        {
+          "name" : "images",
+          "type" : "Images",
+          "comment" : "",
+          "children" : [
+            {
+              "comment" : "",
+              "name" : "upsidedown.image.png",
+              "type" : "Image",
+              "relPath" : "docs/images/upsidedown.image.png",
+              "children" : null
+            }
+          ],
+          "relPath" : "docs/images/"
+        }
+      ]
+    },
+    {
+      "comment" : "",
+      "name" : "images",
+      "children" : [
+        {
+          "name" : "JazzIsBack.jpg",
+          "comment" : "",
+          "relPath" : "images/JazzIsBack.jpg",
+          "type" : "Image",
+          "children" : null
+        },
+        {
+          "children" : null,
+          "relPath" : "images/JazzIsDown.jpg",
+          "name" : "JazzIsDown.jpg",
+          "type" : "Image",
+          "comment" : ""
+        }
+      ],
+      "type" : "Images",
+      "relPath" : "images"
+    },
+    {
+      "name" : "actions",
+      "type" : "Actions",
+      "children" : [
+        {
+          "children" : null,
+          "name" : "flipImage.json",
+          "comment" : "",
+          "type" : "Action",
+          "relPath" : "actions/flipImage.json"
+        }
+      ],
+      "relPath" : "actions",
+      "comment" : ""
+    }
+  ],
+  "mainAction" : ""
+}

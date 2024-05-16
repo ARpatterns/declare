@@ -1,4 +1,4 @@
-# Ahead Staging Pattern
+# Ahead Staging
 
 Ahead staging is a technique for presenting 3D content in a way that it is aligned to the spectator’s position and view direction. After the initial staging, users can interact with the virtual scene from their current position or move toward and around the staged content.
 
@@ -9,6 +9,7 @@ Ahead staging is a technique for presenting 3D content in a way that it is align
 ### AR Patterns
 
 _Behavior_
+* Event: on floor detection
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the staging ahead action
 
 _Augmentation_
@@ -57,6 +58,7 @@ _Augmentation_
 ### AR Patterns
 
 _Behavior_
+* Event: on floor detection
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of a list of staging ahead actions.
 
 _Augmentation_
@@ -138,6 +140,7 @@ _Augmentation_
 ### AR Patterns
 
 _Behavior_
+* Event: on tapping
 * [Conditional Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/conditional-reaction.md): Pressing the overlay button (+) in the bottom right corner sets a data flag. If the data flag becomes the value of 1 the ECA rule is executing the ahead staging action that places the 3D object into the scene.
 
 _Augmentation_

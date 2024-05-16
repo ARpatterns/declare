@@ -18,6 +18,17 @@ The following scenarios of applied AR Patterns listed below are all provided as 
 
 ## Scenarios of applied AR Patterns
 
+### Anchored Supplement
+
+* _Project Link_: [Anchored Supplement](AnchoredSupplement)
+
+### Superimposition
+
+![Superimposition](screens/substitute.mp4)
+
+* _Project Link_: [Superimposition](Superimposition)
+
+
 ### Ahead Staging
 
 <img src="AheadStaging/docs/images/screen3.jpg" width="180">
@@ -33,10 +44,3 @@ Presentation of 3D content ahead of user.
 
 * _Project Link_: [Staged Progression](StagedProgression)
 
-### Anchored Supplement
-
-* _Project Link_: [Anchored Supplement](AnchoredSupplement)
-
-### Superimposition
-
-* _Project Link_: [Superimposition](Superimposition)
