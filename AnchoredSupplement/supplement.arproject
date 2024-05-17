@@ -1,0 +1,69 @@
+{
+  "nodes" : [
+    {
+      "children" : null,
+      "comment" : "",
+      "name" : "Settings",
+      "relPath" : "supplement.arproject",
+      "type" : "Project"
+    },
+    {
+      "comment" : "",
+      "relPath" : "README.md",
+      "type" : "README",
+      "children" : null,
+      "name" : "README"
+    },
+    {
+      "relPath" : "docs/",
+      "type" : "Documents",
+      "children" : [
+        {
+          "type" : "Document",
+          "relPath" : "docs/supplement.md",
+          "name" : "supplement.md",
+          "children" : null,
+          "comment" : ""
+        }
+      ],
+      "comment" : "",
+      "name" : "docs"
+    },
+    {
+      "name" : "images",
+      "type" : "Images",
+      "children" : [
+        {
+          "type" : "Image",
+          "relPath" : "images/JazzIsBack.jpg",
+          "comment" : "",
+          "name" : "JazzIsBack.jpg",
+          "children" : null
+        }
+      ],
+      "comment" : "",
+      "relPath" : "images"
+    },
+    {
+      "children" : [
+        {
+          "children" : null,
+          "comment" : "",
+          "name" : "supplement.json",
+          "relPath" : "actions/supplement.json",
+          "type" : "Action"
+        }
+      ],
+      "relPath" : "actions",
+      "type" : "Actions",
+      "name" : "actions",
+      "comment" : ""
+    }
+  ],
+  "desc" : "Enhance detected image with additional info",
+  "idPrefix" : "",
+  "remoteServer" : "",
+  "mainAction" : "",
+  "name" : "supplement",
+  "sourceControl" : ""
+}

@@ -18,16 +18,6 @@ The following scenarios of applied AR Patterns listed below are all provided as 
 
 ## Scenarios of applied AR Patterns
 
-### Anchored Supplement
-
-* _Project Link_: [Anchored Supplement](AnchoredSupplement)
-
-### Superimposition
-
-![video](screens/substitute.gif)
-
-* _Project Link_: [Superimposition](Superimposition)
-
 
 ### Ahead Staging
 
@@ -36,8 +26,28 @@ The following scenarios of applied AR Patterns listed below are all provided as 
 Presentation of 3D content ahead of user.
 
 * _Behavioral Patterns_: Instant Reaction, Indirect Reaction
-* _Agmentation Patterns_: Ahead Staging
+* _Augmentation Patterns_: Ahead Staging
 * _Project Link_: [Ahead Staging](AheadStaging)
+
+
+### Anchored Supplement
+
+![supvid](screens/supplement.gif)
+
+* _Behavioral Patterns_: Instant Reaction, Indirect Reaction
+* _Augmentation Patterns_: Anchored Supplement
+* _Project Link_: [AnchoredSupplement](AnchoredSupplement)
+
+* _Project Link_: [Anchored Supplement](AnchoredSupplement)
+
+
+### Superimposition
+
+![subvid](screens/substitute.gif)
+
+* _Behavioral Patterns_: Instant Reaction, Indirect Reaction
+* _Augmentation Patterns_: Superimposition
+* _Project Link_: [Superimposition](Superimposition)
 
 
 ### Staged Progression

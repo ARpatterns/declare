@@ -1,0 +1,80 @@
+{
+  "$schema": "https://service.metason.net/ar/schemas/action.json",
+  "items" : [
+    {
+      "asset" : "Poster by the<br>music club <b>Moods</b> <br> <small><br>Zürich (2021)<br></small>",
+      "attributes" : "color:#000000; bgcolor:#FFBB33CC; scale:0.75;x:-0.5;y:0.0;",
+      "id" : "info.panel",
+      "isLocked" : true,
+      "name" : "Panel",
+      "subtype" : "Panel",
+      "type" : "Spot"
+    },
+    {
+      "attributes" : "color:#FFBB33CC;width:0.013;",
+      "id" : "info.line",
+      "isLocked" : false,
+      "name" : "Polylink",
+      "subtype" : "Polylink",
+      "type" : "Route",
+      "vertices" : [
+        [
+          -0.275,
+          0.2,
+          0
+        ],
+        [
+          -0.1,
+          0.2,
+          0
+        ],
+        [
+          0.0,
+          0.1,
+          0
+        ],
+        [
+          0,
+          0.0,
+          0
+        ]
+      ]
+    },
+    {
+      "attributes" : "wxdxh:0.29x0.0x0.4;",
+      "children" : "info.panel, info.line",
+      "id" : "detected.image.enhanced",
+      "isLocked" : false,
+      "name" : "Detected Image",
+      "subtype" : "Group",
+      "type" : "Geometry",
+      "vertices" : [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    }
+  ],
+  "tasks" : [
+    {
+      "dispatch" : "atstart",
+      "do" : "skip",
+      "state" : "floor"
+    },
+    {
+      "do" : "detect",
+      "id" : "detected.image.enhanced",
+      "height" : "0.40",
+      "img" : "$SERVER/images/JazzIsBack.jpg",
+      "up" : "global",
+      "width" : "0.29"
+    }
+  ]
+}
