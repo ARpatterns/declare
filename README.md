@@ -21,7 +21,11 @@ The following scenarios of applied AR Patterns listed below are all provided as 
 
 ### Ahead Staging
 
+<img src="AheadStaging/docs/images/screen1.jpg" width="180">
+<img src="AheadStaging/docs/images/screen2.jpg" width="180">
 <img src="AheadStaging/docs/images/screen3.jpg" width="180">
+
+<!-- <img src="AheadStaging/docs/images/screens.png" height="312"> -->
 
 Presentation of 3D content ahead of user.
 
@@ -30,27 +34,65 @@ Presentation of 3D content ahead of user.
 * _Project Link_: [Ahead Staging](AheadStaging)
 
 
+### Geolocated Remark
+
+<img src="GeolocatedRemark/docs/images/screens.png" height="312">
+
+
 ### Anchored Supplement
 
 ![supvid](screens/supplement.gif)
 
-* _Behavioral Patterns_: Instant Reaction, Indirect Reaction
-* _Augmentation Patterns_: Anchored Supplement
-* _Project Link_: [AnchoredSupplement](AnchoredSupplement)
+Presentation of 3D content aligned to detected entity for enhancement.
 
-* _Project Link_: [Anchored Supplement](AnchoredSupplement)
+* _Behavioral Patterns_: Instant Reaction, Indirect Reaction
+* _Augmentation Patterns_: Captured Twin, Anchored Supplement
+* _Project Link_: [AnchoredSupplement](AnchoredSupplement)
 
 
 ### Superimposition
 
 ![subvid](screens/substitute.gif)
 
+Presentation of 3D content covering and replacing a detected entity.
+
 * _Behavioral Patterns_: Instant Reaction, Indirect Reaction
-* _Augmentation Patterns_: Superimposition
+* _Augmentation Patterns_: Captured Twin, Superimposition
 * _Project Link_: [Superimposition](Superimposition)
 
 
-### Staged Progression
+### Staged Linear Progression
 
+Sequence of ordered presentations in spatial context using foward/backward buttons.
+
+* _Behavioral Patterns_: Instant Reaction
+* _Augmentation Patterns_: Staged Progression
 * _Project Link_: [Staged Progression](StagedProgression)
 
+start, step1, step2, end
+
+### Staged Temporal Progression
+
+Sequence of temporal presentations in spatial context.
+
+* _Behavioral Patterns_: Timed Reaction
+* _Augmentation Patterns_: Staged Progression
+* _Project Link_: [Temporal Progression](TemporalProgression)
+
+scene1, scene2 
+
+<!-- 
+
+### Geolocated Remark
+Overlay: "You are near XXX in TOWN"
+Overlay: "and you are indoor/outdoor"
+
+Cardinal direction to North
+Navigation towards Mecca
+
+### Interactive Non-linear Progression?
+Dialog
+start step1, step2A, step2B, step3
+
+
+-->

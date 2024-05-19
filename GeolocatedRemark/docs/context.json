@@ -1,0 +1,418 @@
+{
+  "floor" : {
+    "id" : "83266E04-91AC-4DF8-BDD4-A0E378ED3CB8",
+    "refAxis" : {
+      "y" : 0,
+      "x" : 0,
+      "z" : 1
+    },
+    "name" : "",
+    "notion" : {
+      "colors" : [
+        {
+          "isBrown" : false,
+          "primary" : "#748051FF",
+          "secondary" : "#BDC3C7FF",
+          "isContrasting" : false,
+          "luminance" : 0.19745427915341074,
+          "isGrey" : false,
+          "isBW" : false,
+          "contrast" : 2.3831696032521483,
+          "equalHue" : false,
+          "mIdx" : 1,
+          "hue" : 0.20921985815602837
+        },
+        {
+          "isGrey" : false,
+          "primary" : "#B1B57DFF",
+          "isBrown" : false,
+          "isContrasting" : false,
+          "luminance" : 0.43875527007879211,
+          "mIdx" : 5,
+          "contrast" : 3.7262574065916185,
+          "isBW" : false,
+          "equalHue" : true,
+          "secondary" : "#475623FF",
+          "hue" : 0.1785714285714286
+        }
+      ],
+      "type" : "floor",
+      "measures" : [
+        {
+          "cam" : {
+            "x" : -5.8225356e-05,
+            "z" : 0.00024765730000000003,
+            "y" : -0.012742773000000001
+          },
+          "pos" : {
+            "y" : -1.2545325000000001,
+            "x" : 0.54828673999999999,
+            "z" : -0.031263052999999999
+          },
+          "dt" : 0.023289918899536133,
+          "t" : 2.0990810394287109
+        },
+        {
+          "cam" : {
+            "y" : -0.006988396,
+            "z" : -0.00051543116999999998,
+            "x" : 0.00022150110000000001
+          },
+          "pos" : {
+            "y" : -1.2545325000000001,
+            "z" : -0.031263052999999999,
+            "x" : 0.54828673999999999
+          },
+          "dt" : 0.15757393836975098,
+          "t" : 2.2333400249481201
+        },
+        {
+          "cam" : {
+            "z" : -0.0020845025,
+            "x" : -0.0049189283,
+            "y" : 0.00045561948000000002
+          },
+          "pos" : {
+            "z" : -0.031263052999999999,
+            "x" : 0.54828673999999999,
+            "y" : -1.2545325000000001
+          },
+          "dt" : 0.5445399284362793,
+          "t" : 2.620305061340332
+        },
+        {
+          "cam" : {
+            "x" : -0.00030005956000000002,
+            "z" : -0.010884214,
+            "y" : 0.051010590000000001
+          },
+          "pos" : {
+            "z" : -0.031263052999999999,
+            "y" : -1.2545325000000001,
+            "x" : 0.54828673999999999
+          },
+          "dt" : 1.0761719942092896,
+          "t" : 3.1519370079040527
+        },
+        {
+          "cam" : {
+            "z" : -0.023184348,
+            "x" : -0.0049486399999999998,
+            "y" : 0.12568273999999999
+          },
+          "pos" : {
+            "x" : 0.54828673999999999,
+            "y" : -1.2545325000000001,
+            "z" : -0.031263052999999999
+          },
+          "dt" : 1.6090959310531616,
+          "t" : 3.6848610639572144
+        },
+        {
+          "cam" : {
+            "x" : -0.016226201999999999,
+            "z" : -0.027874871999999998,
+            "y" : 0.18777709000000001
+          },
+          "pos" : {
+            "z" : -0.031263052999999999,
+            "y" : -1.2545325000000001,
+            "x" : 0.54828673999999999
+          },
+          "dt" : 2.1428920030593872,
+          "t" : 4.2186570167541504
+        }
+      ],
+      "labels" : [
+        {
+          "name" : "land",
+          "occurrences" : [
+            {
+              "mIdx" : 0,
+              "confidence" : 0.45535544
+            },
+            {
+              "mIdx" : 2,
+              "confidence" : 0.52833222999999996
+            },
+            {
+              "mIdx" : 3,
+              "confidence" : 0.69482569999999999
+            },
+            {
+              "mIdx" : 4,
+              "confidence" : 0.86183969999999999
+            }
+          ]
+        },
+        {
+          "name" : "outdoor",
+          "occurrences" : [
+            {
+              "mIdx" : 0,
+              "confidence" : 0.45535544
+            },
+            {
+              "mIdx" : 2,
+              "confidence" : 0.52833222999999996
+            },
+            {
+              "mIdx" : 3,
+              "confidence" : 0.69482569999999999
+            },
+            {
+              "mIdx" : 4,
+              "confidence" : 0.86183969999999999
+            }
+          ]
+        },
+        {
+          "name" : "grass",
+          "occurrences" : [
+            {
+              "mIdx" : 0,
+              "confidence" : 0.45532226999999997
+            },
+            {
+              "mIdx" : 2,
+              "confidence" : 0.52832029999999996
+            },
+            {
+              "mIdx" : 3,
+              "confidence" : 0.6948242
+            },
+            {
+              "mIdx" : 4,
+              "confidence" : 0.86181640000000004
+            }
+          ]
+        },
+        {
+          "name" : "plant",
+          "occurrences" : [
+            {
+              "mIdx" : 0,
+              "confidence" : 0.32658177999999999
+            },
+            {
+              "mIdx" : 3,
+              "confidence" : 0.41028809999999999
+            },
+            {
+              "mIdx" : 4,
+              "confidence" : 0.66069580000000006
+            }
+          ]
+        },
+        {
+          "name" : "moss",
+          "occurrences" : [
+            {
+              "mIdx" : 0,
+              "confidence" : 0.30566406000000002
+            },
+            {
+              "mIdx" : 3,
+              "confidence" : 0.39208984000000002
+            }
+          ]
+        },
+        {
+          "name" : "foliage",
+          "occurrences" : [
+            {
+              "mIdx" : 4,
+              "confidence" : 0.65869140000000004
+            }
+          ]
+        },
+        {
+          "name" : "structure",
+          "occurrences" : [
+            {
+              "mIdx" : 4,
+              "confidence" : 0.46235710000000002
+            }
+          ]
+        },
+        {
+          "name" : "rocks",
+          "occurrences" : [
+            {
+              "mIdx" : 4,
+              "confidence" : 0.46118164
+            }
+          ]
+        }
+      ]
+    },
+    "isEnclosed" : false,
+    "ceilingHeight" : 2.6000000000000001,
+    "wallArea" : 0,
+    "surface" : "Terrazzo",
+    "position" : {
+      "z" : 0,
+      "y" : -1.2821031000000001,
+      "x" : 0
+    },
+    "vertices" : [
+
+    ],
+    "type" : "Floor",
+    "color" : "#748051FF",
+    "area" : 0,
+    "up" : {
+      "z" : 0,
+      "x" : 0,
+      "y" : 1
+    },
+    "isHeadedNorth" : true,
+    "subtype" : "undefined",
+    "spaceId" : "",
+    "material" : "Concrete"
+  },
+  "wallMaterial" : "Concrete Raw Board",
+  "session" : {
+    "mode" : "stable",
+    "state" : "addingElements",
+    "reregistered" : false,
+    "light" : {
+      "temperature" : 5933,
+      "intensity" : 1000
+    },
+    "id" : "616D806A-9CBF-41CA-9973-67D1C80D7392"
+  },
+  "building" : "",
+  "device" : {
+    "use" : "handheld",
+    "screen" : {
+      "height" : 844,
+      "scale" : 3,
+      "width" : 390
+    },
+    "lidar" : 1,
+    "mem" : {
+      "total" : 5677.8125,
+      "used" : 348.65625
+    },
+    "cores" : 6,
+    "type" : "Phone",
+    "heat" : 0,
+    "arview" : {
+      "width" : 390,
+      "height" : 670,
+      "scale" : 3
+    }
+  },
+  "links" : [
+
+  ],
+  "items" : [
+
+  ],
+  "remarks" : "",
+  "level" : 0,
+  "app" : {
+    "name" : "ARchi VR",
+    "versionString" : "3.3",
+    "versionNumber" : 3.2999999523162842
+  },
+  "detected" : {
+    "labels" : [
+      "land",
+      "outdoor",
+      "grass",
+      "plant",
+      "foliage",
+      "structure",
+      "rocks"
+    ],
+    "confidence" : {
+      "plant" : 0.5461686,
+      "outdoor" : 0.63378924000000003,
+      "land" : 0.63378924000000003,
+      "structure" : 0.43005684,
+      "grass" : 0.63378906000000002,
+      "rocks" : 0.4296875,
+      "foliage" : 0.53759765999999998
+    },
+    "occurrences" : [
+
+    ]
+  },
+  "const" : {
+    "phi" : 1.6180340051651001,
+    "e" : 2.7182817459106445,
+    "sin45" : 0.70710676908493042,
+    "sin60" : 0.86602538824081421,
+    "tan30" : 0.5773501992225647,
+    "tan45" : 0.99999994039535522,
+    "tan60" : 1.7320504188537598,
+    "sin30" : 0.49999997019767761,
+    "pi" : 3.1415925025939941
+  },
+  "location" : {
+    "postalCode" : "7050",
+    "place" : "Prätschlistrasse 79",
+    "longitude" : 9.673938928181002,
+    "country" : "Schweiz",
+    "latitude" : 46.789472037970206,
+    "level" : 0,
+    "address" : "Prätschlistrasse 79",
+    "countryCode" : "CH",
+    "altitude" : 1904.1698532719165,
+    "environment" : "outdoor",
+    "city" : "Arosa",
+    "state" : "GR"
+  },
+  "cutouts" : [
+
+  ],
+  "walls" : [
+
+  ],
+  "scope" : "local",
+  "outerWallSurface" : "Concrete Raw Board",
+  "name" : "",
+  "id" : "",
+  "user" : {
+    "usesSpeech" : false,
+    "rot" : {
+      "y" : -1.099238395690918,
+      "x" : 2.2186367511749268,
+      "z" : -2.9378964900970459
+    },
+    "name" : "Philipp",
+    "yaw" : -2.033951997756958,
+    "tilt" : -0.73711013793945312,
+    "refs" : [
+
+    ],
+    "id" : "_63147999b64c58a00e0f32b267748a63",
+    "organisation" : "Metason",
+    "pos" : {
+      "z" : -0.016363121569156647,
+      "x" : 0.02894715778529644,
+      "y" : 0.12508535385131836
+    },
+    "usesMetric" : true,
+    "usesAudio" : false
+  },
+  "time" : {
+    "runtime" : 12.514679908752441,
+    "month" : 5,
+    "year" : 2024,
+    "day" : 19,
+    "sec" : 29,
+    "min" : 39,
+    "hms" : "16:39:29",
+    "wddate" : "So. 19.05.2024",
+    "date" : "19.05.2024",
+    "hour" : 16
+  },
+  "subtype" : "Single Room",
+  "data" : {
+    "trace_detectors" : false
+  },
+  "type" : "Space"
+}

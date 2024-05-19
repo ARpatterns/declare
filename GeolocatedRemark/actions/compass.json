@@ -1,0 +1,29 @@
+{
+  "$schema": "https://service.metason.net/ar/schemas/action.json",
+  "items" : [
+    {
+      "asset" : "https://service.metason.net/ar/content/north/windrose.png",
+      "attributes" : "wxdxh:1.0x1.0x0.0;",
+      "id" : "net.metason.archi.windrose",
+      "name" : "Wind Rose",
+      "subtype" : "Panel",
+      "type" : "Spot"
+    }
+  ],
+  "tasks" : [
+    {
+      "do" : "clear",
+      "id": "UI"
+    },
+    {
+      "do" : "add",
+      "id" : "net.metason.archi.windrose",
+      "ahead" : "0.0 0.0 -1.0"
+    },
+    {
+      "do" : "turn",
+      "id" : "net.metason.archi.windrose",
+      "to" : "0.0"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://service.metason.net/ar/schemas/action.json",
+  "items" : [
+    {
+      "type" : "Overlay",
+      "subtype" : "Label",
+      "id" : "overlay.label",
+      "attributes" : "color:#000000;bgcolor:#FF9966DD;cx:0;bottom:80;width:130;height:28;",
+      "name" : "Your Location"
+    }
+  ],
+  "tasks" : [
+    {
+      "do" : "skip",
+      "state" : "floor"
+    },
+    {
+      "do" : "add",
+      "id" : "overlay.label"
+    },
+    {
+      "do" : "setText",
+      "id" : "overlay.label",
+      "expression" : "join({'Near', location.place, 'in', location.city}, ' ')"
+    }
+  ]
+}

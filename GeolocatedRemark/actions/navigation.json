@@ -1,0 +1,16 @@
+{
+  "$schema": "https://service.metason.net/ar/schemas/action.json",
+  "items": [
+  ],
+  "tasks": [
+    {
+      "do" : "clear",
+      "id": "UI"
+    },
+    {
+      "do" : "request",
+      "url": "https://service.metason.net/arext/mecca/",
+      "upload": "POST:USER"
+    }
+  ]
+}

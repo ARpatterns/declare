@@ -1,0 +1,90 @@
+{
+  "name" : "geolocRemark",
+  "idPrefix" : "",
+  "sourceControl" : "",
+  "desc" : "Examples of Ahead Staging Pattern",
+  "mainAction" : "",
+  "nodes" : [
+    {
+      "type" : "Project",
+      "relPath" : "geolocRemark.arproject",
+      "comment" : "",
+      "children" : null,
+      "name" : "Settings"
+    },
+    {
+      "type" : "README",
+      "children" : null,
+      "relPath" : "README.md",
+      "name" : "README",
+      "comment" : ""
+    },
+    {
+      "comment" : "",
+      "children" : [
+        {
+          "relPath" : "docs/images/",
+          "children" : [
+            {
+              "children" : null,
+              "comment" : "",
+              "name" : "net.metason.archi.windrose.png",
+              "relPath" : "docs/images//net.metason.archi.windrose.png",
+              "type" : "Image"
+            }
+          ],
+          "name" : "images",
+          "comment" : "",
+          "type" : "Images"
+        },
+        {
+          "type" : "Document",
+          "name" : "geoLoc.md",
+          "relPath" : "docs/geoLoc.md",
+          "comment" : "",
+          "children" : null
+        },
+        {
+          "name" : "compass.md",
+          "type" : "Document",
+          "relPath" : "docs/compass.md",
+          "children" : null,
+          "comment" : ""
+        }
+      ],
+      "name" : "docs",
+      "relPath" : "docs/",
+      "type" : "Documents"
+    },
+    {
+      "name" : "actions",
+      "type" : "Actions",
+      "relPath" : "actions",
+      "comment" : "",
+      "children" : [
+        {
+          "children" : null,
+          "type" : "Action",
+          "name" : "geoLoc.json",
+          "comment" : "",
+          "relPath" : "actions/geoLoc.json"
+        },
+        {
+          "children" : null,
+          "relPath" : "actions/compass.json",
+          "name" : "compass.json",
+          "type" : "Action",
+          "comment" : ""
+        },
+        {
+          "children" : null,
+          "type" : "Action",
+          "relPath" : "actions/navigation.json",
+          "name" : "navigation.json",
+          "comment" : ""
+        }
+      ]
+    }
+  ],
+  "remoteServer" : ""
+}
