@@ -39,7 +39,7 @@ Presentation of georeferenced information.
 
 * _Behavioral Patterns_: Instant Reaction, Request-Response Pattern
 * _Augmentation Patterns_: Geolocated Remark
-* _Project Link_: [Ahead Staging](AheadStaging)
+* _Project Link_: [GeolocatedRemark](GeolocatedRemark)
 
 
 ### Anchored Supplement
