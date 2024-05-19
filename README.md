@@ -26,7 +26,7 @@ The following scenarios of applied AR Patterns listed below are all provided as 
 
 Presentation of 3D content ahead of user.
 
-* _Behavioral Patterns_: Instant Reaction, Indirect Reaction
+* _Behavioral Patterns_: Instant Reaction or Indirect Reaction
 * _Augmentation Patterns_: Ahead Staging
 * _Project Link_: [Ahead Staging](AheadStaging)
 
@@ -35,6 +35,12 @@ Presentation of 3D content ahead of user.
 
 <img src="GeolocatedRemark/docs/images/screens.png" height="312">
 
+Presentation of georeferenced information.
+
+* _Behavioral Patterns_: Instant Reaction, Request-Response Pattern
+* _Augmentation Patterns_: Geolocated Remark
+* _Project Link_: [Ahead Staging](AheadStaging)
+
 
 ### Anchored Supplement
 
@@ -42,7 +48,7 @@ Presentation of 3D content ahead of user.
 
 Presentation of 3D content aligned to detected entity for enhancement.
 
-* _Behavioral Patterns_: Instant Reaction, Indirect Reaction
+* _Behavioral Patterns_: Indirect Reaction
 * _Augmentation Patterns_: Captured Twin, Anchored Supplement
 * _Project Link_: [AnchoredSupplement](AnchoredSupplement)
 
@@ -53,11 +59,12 @@ Presentation of 3D content aligned to detected entity for enhancement.
 
 Presentation of 3D content covering and replacing a detected entity.
 
-* _Behavioral Patterns_: Instant Reaction, Indirect Reaction
+* _Behavioral Patterns_: Indirect Reaction
 * _Augmentation Patterns_: Captured Twin, Superimposition
 * _Project Link_: [Superimposition](Superimposition)
 
 
+<!-- 
 ### Staged Linear Progression
 
 Sequence of ordered presentations in spatial context using foward/backward buttons.
@@ -77,6 +84,8 @@ Sequence of temporal presentations in spatial context.
 * _Project Link_: [Temporal Progression](TemporalProgression)
 
 scene1, scene2 
+
+-->
 
 <!-- 
 

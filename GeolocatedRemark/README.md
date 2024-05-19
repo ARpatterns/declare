@@ -98,30 +98,31 @@ The join function in the expression is gathering the values of `location.place` 
 
 ![screen 2](docs/images/screen2.jpg)
 
+Presentation of an oriented compass windrose on the floor. 
+
 ### AR Patterns
 
 _Behavior_
-* Event: on floor detection
-* [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of a list of staging ahead actions.
+* [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the staging ahead action.
 
 _Augmentation_
-* [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting three 3D objects 1.5 m in front of the user at differnt heights.
-  * Placed: initial ahead of the user. The first on the floor, the others above it.
-  * Aligned: initial towards the user in view direction. 
+* [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting windrose image 1 m in front of the user.
+  * Placed: initial ahead of the user on the floor.
+  * Aligned: towards the north direction of compass sensor. 
 
 ### Diagram
 
- | on:command |  &rarr; | do:add ahead 0 0 -1.5 |
+ | on:command |  &rarr; | do:clear |
  |---|---|---|
-> 'red.star' ➕
+> 'UI'
  
- | on:command |  &rarr; | do:add ahead 0 0.24 -1.5 |
+ | on:command |  &rarr; | do:add ahead 0.0 0.0 -1.0 |
  |---|---|---|
-> 'brown.cylinder' ➕
+> 'net.metason.archi.windrose' ➕
  
- | on:command |  &rarr; | do:add ahead 0 0.72 -1.5 |
+ | on:command |  &rarr; | do:turn to 0.0 |
  |---|---|---|
-> 'green.sphere' ➕
+> 'net.metason.archi.windrose'
 
 ### Code
 
@@ -157,20 +158,25 @@ _Augmentation_
 }
 ```
 
+Because the z-axis of the AR scene is oriented towards south, the flat image is oriented towards north when the turn angle isset to 0.
+
 ### Links
 
-* Detailed Docu: [docs/multipleStaging.md](docs/multipleStaging.md)
-* Source Code: [actions/multipleStaging.json](actions/multipleStaging.json)
+* Detailed Docu: [docs/compass.md](docs/compass.md)
+* Source Code: [actions/compass.json](actions/compass.json)
 
-## Navigational Direction towards Mecca
+
+## Navigational Direction
 
 ![screen 3](docs/images/screen3.jpg)
+
+Presentation of a direction arrow towards Mecca.
 
 ### AR Patterns
 
 _Behavior_
-* Event: on tapping
-* [Conditional Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/conditional-reaction.md): Pressing the overlay button (+) in the bottom right corner sets a data flag. If the data flag becomes the value of 1 the ECA rule is executing the ahead staging action that places the 3D object into the scene.
+* [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the request to the server for getting the direction to mecca.
+* [Request-Response](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/request-response.md): Remote call resulting in asynchronously receiving ECA rules from the server.
 
 _Augmentation_
 * [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): placing virtual 3D object `wooden.chest` 1.5 m in front of the user on the floor.
@@ -179,13 +185,13 @@ _Augmentation_
 
 ### Diagram
 
- | on:command |  &rarr; | do:add |
+ | on:command |  &rarr; | do:clear |
  |---|---|---|
-> 'overlay.button' ➕
+> 'UI'
  
- | as:stated | if:`data.flag == 1`| do:add ahead 0 0 -1.5 |
+ | on:command |  &rarr;  | do:request POST:USER |
  |---|---|---|
-> 'wooden.chest' ➕
+> &darr; _do:run_ &larr; _on:response_ ••• https://service.metason.net/arext/mecca/ 
  
 ### Code
 
@@ -208,15 +214,62 @@ _Augmentation_
 }
 ```
 
+### Request-Response
+
+The REST API call will post user data including lattitude/longitude to the server. The server is calculating the orientation towards Mecca as an orientation _angle-value_ and returns the result as JSON data.
+
+```json
+{
+  "$schema": "https://service.metason.net/ar/schemas/action.json",
+  "items": [
+    {
+      "id": "net.metason.archi.mecca",
+      "type" : "Route",
+      "subtype" : "Direction",
+      "attributes" : "color:#F0E800;flat:1;",
+      "vertices" : [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.7
+        ]
+      ],
+      "name" : "Mecca"
+    }   
+  ],
+  "tasks": [
+    {
+      "do" : "add",
+      "id": "net.metason.archi.mecca",
+      "ahead" : "0.0 0.0 -0.75"
+    },
+    {
+      "do" : "turn",
+      "id" : "net.metason.archi.mecca",
+      "to" : "angle-value"
+    }
+  ]
+}
+```
+
+A sample server using Flask/Python is available at  
+[https://github.com/metason/ARchiWebService](https://github.com/metason/ARchiWebService) which demonstrates the corresponding Web Service for  this example.
+
 ### Links
 
-* Detailed Docu: [docs/indirectStaging.md](docs/indirectStaging.md)
-* Source Code: [actions/indirectStaging.json](actions/indirectStaging.json)
+* Detailed Docu: [docs/navigation.md](docs/navigation.md)
+* Source Code: [actions/navigation.json](actions/navigation.json)
+
 
 ## References
 
 > [!TIP]
-> Try out the examples: Open `aheadStaging.arproject` in [ARchi Composer](https://service.metason.net/ar/docu/#archi-composer) for browsing, editing, and live-injecting the code from your Mac to the [ARchi VR App](https://archi.metason.net) on your iOS device.
+> Try out the examples: Open `geolocRemark.arproject` in [ARchi Composer](https://service.metason.net/ar/docu/#archi-composer) for browsing, editing, and live-injecting the code from your Mac to the [ARchi VR App](https://archi.metason.net) on your iOS device.
 
 - ARchi VR [Technical Documentation](https://service.metason.net/ar/docu/)
 - ARchi VR [App](https://archi.metason.net)
