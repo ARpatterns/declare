@@ -82,23 +82,10 @@ Sequence of temporal presentations in spatial context.
 * _Behavioral Patterns_: Timed Reaction
 * _Augmentation Patterns_: Staged Progression
 * _Project Link_: [Temporal Progression](TemporalProgression)
-
 scene1, scene2 
-
--->
-
-<!-- 
-
-### Geolocated Remark
-Overlay: "You are near XXX in TOWN"
-Overlay: "and you are indoor/outdoor"
-
-Cardinal direction to North
-Navigation towards Mecca
 
 ### Interactive Non-linear Progression?
 Dialog
 start step1, step2A, step2B, step3
-
 
 -->

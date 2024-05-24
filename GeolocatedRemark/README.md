@@ -176,12 +176,12 @@ Presentation of a direction arrow towards Mecca.
 
 _Behavior_
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the request to the server for getting the direction to mecca.
-* [Request-Response](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/request-response.md): Remote call resulting in asynchronously receiving ECA rules from the server.
+* [Request-Response](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/request-response.md): Remote call resulting in asynchronously receiving ECA rules from the server. 
 
 _Augmentation_
 * [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): placing virtual 3D object `wooden.chest` 1.5 m in front of the user on the floor.
-  * Placed: Placed: initial ahead of the user on the floor.
-  * Aligned: initial towards the user in view direction.
+  * Placed: initial ahead of the user on the floor.  
+  * Aligned: initial oriented towards the user in view direction and then turned by angle towards Mecca. 
 
 ### Diagram
 
@@ -216,7 +216,7 @@ _Augmentation_
 
 ### Request-Response
 
-The REST API call will post user data including lattitude/longitude to the server. The server is calculating the orientation towards Mecca as an orientation _angle-value_ and returns the result as JSON data.
+The REST API call will post user data including lattitude/longitude to the server. The server is geographically calculating the orientation towards Mecca as an orientation _angle-value_ and returns the result as JSON data.
 
 ```json
 {
@@ -258,7 +258,7 @@ The REST API call will post user data including lattitude/longitude to the serve
 ```
 
 A sample server using Flask/Python is available at  
-[https://github.com/metason/ARchiWebService](https://github.com/metason/ARchiWebService) which demonstrates the corresponding Web Service for  this example.
+[https://github.com/metason/ARchiWebService](https://github.com/metason/ARchiWebService) which demonstrates the corresponding Web Service for this example.
 
 ### Links
 
