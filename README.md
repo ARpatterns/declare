@@ -1,8 +1,17 @@
 # AR Patterns in DeclARe using ARchi VR App
 
+<img src="screens/archi_logo.png" width="120" align="right">
+
+## Technology Platform: ARchi VR
+- _Software Stack_: ARchi VR App based on Apple ARKit, DeclARe scripting
+- _Supported Devices_: handheld iOS devices (iPhones, iPads)
+- _Editor Environment_: ARchi Composer 
+- _Development Method_: declarative low-code
+
+
 ## DeclARe - Declarative Creation of AR Content 
 
-DeclARe is a scripting language for the creation of AR experiences. Instead of using a programming language to algorithmically define how AR content should be created and behave, it is based on a declarative approach that focuses on specifying WHAT needs to be accomplished with WHICH asset. To achieve this, the ARchi VR app interprets declarations in JSON data structures that do not include conventional programming code, but instead use active Event-Condition-Action rules to define the behavior of the AR experience. See the [Technical Documentation](https://service.metason.net/ar/docu/) on how to create curated AR content using DeclARe.
+DeclARe is a scripting language for the creation of AR experiences. Instead of using a programming language to algorithmically define how AR content should be created and behave, it is based on a declarative approach that focuses on specifying WHAT needs to be accomplished with WHICH assets. To achieve this, the ARchi VR app interprets declarations in JSON data structures that do not include conventional programming code, but instead use active Event-Condition-Action rules to define the behavior of the AR experience. See the [Technical Documentation](https://service.metason.net/ar/docu/) on how to create curated AR content using DeclARe.
 
 ### ARchi VR App
 The mobile [ARchi VR App](https://archi.metason.net) is avialbable for iOS devices and interprets 'DeclARe' scripts as hand-held AR experiences. You may download ARchi VR for free on the [Apple App Store](https://itunes.apple.com/ch/app/archi-vr/id1317896781?mt=8).
@@ -16,8 +25,7 @@ The following scenarios of applied AR Patterns listed below are all provided as 
 
 ---
 
-## Scenarios of applied AR Patterns
-
+## Basic AR Patterns
 
 ### Ahead Staging
 
@@ -88,4 +96,12 @@ scene1, scene2
 Dialog
 start step1, step2A, step2B, step3
 
+Reality Capturing Scenarios (Group)
+    - Distance Measuring Scenario
+    - Room Scan Capturing Scenario
+    - Object Recognition Scenario
+    - 
 -->
+
+## Scenarios of applied AR Patterns
+

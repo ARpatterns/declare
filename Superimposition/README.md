@@ -2,19 +2,22 @@
 
 Superimposition aims to cover a detected entity with a virtual object so that the real object is no longer visible.
 
+* _Use Case_: Anchored Complement
+* _Technology Platform_: [ARchi VR](../README.md)
+
 ![screen 1](docs/images/screens.jpg)
 
 ## AR Patterns
 
-_Behavior_
-* Event: on image detection
+__Behavior Patterns__
+* _Event_: on image detection
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the superimposition action
 * [Conditional Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/conditional-reaction.md): remove superimposed object when nolonger visible.
 
-_Augmentation_
+__Augmentation Pattern__
 * [Superimposition](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/superimposition.md): presentation of 3D content replacing the detected image.
-  * Placed: on detected image.
-  * Aligned: with detected image.
+  * _Placed_: on detected image.
+  * _Aligned_: with detected image.
 
 ## Diagram
 
@@ -40,12 +43,12 @@ _Augmentation_
   "$schema": "https://service.metason.net/ar/schemas/action.json",
   "items" : [
     {
+      "type" : "Spot",
+      "type" : "Spot",
+      "id" : "upsidedown.image",
       "asset" : "$SERVER/images/JazzIsDown.jpg",
       "attributes" : "wxdxh:0.29x0.0x0.4;",
-      "id" : "upsidedown.image",
-      "isLocked" : false,
       "name" : "Image Panel",
-      "subtype" : "Panel",
       "type" : "Spot",
       "vertices" : [
         [
@@ -56,13 +59,12 @@ _Augmentation_
       ]
     },
     {
+      "type" : "Geometry",
+      "subtype" : "Group",
+      "id" : "detected.image.flipped",
       "attributes" : "wxdxh:0.29x0.0x0.4;y:-0.2;rx:-90;",
       "children" : "upsidedown.image",
-      "id" : "detected.image.flipped",
-      "isLocked" : false,
       "name" : "Detected Image",
-      "subtype" : "Group",
-      "type" : "Geometry",
       "vertices" : [
         [
           0,
@@ -97,10 +99,8 @@ _Augmentation_
 
 ## Links
 
-* Detailed Docu: [docs/flipImage.md](docs/flipImage.md)
-* Source Code: [actions/flipImage.json](actions/flipImage.json)
-## Links
-- ARchi VR [Technical Documentation](https://service.metason.net/ar/docu/)
+* _Detailed Docu_: [docs/flipImage.md](docs/flipImage.md)
+* _Source Code_: [actions/flipImage.json](actions/flipImage.json)
 
 ## References
 

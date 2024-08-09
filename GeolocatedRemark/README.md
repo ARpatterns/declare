@@ -2,6 +2,9 @@
 
 A geolocated remark is based on location data (latitude and longitude) from the Global Positioning System (GPS) or by georeferenced address data (i.e., country, city, street, building name).
 
+* _Use Case_: - Immersive Site Navigation
+* _Technology Platform_: [ARchi VR](../README.md)
+
 ## Geolocated Information
 
 ![screen 1](docs/images/screen1.jpg)
@@ -10,12 +13,12 @@ Presentation of location info as overlay.
 
 ### AR Patterns
 
-_Behavior_
+__Behavior Pattern__
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the geolocated remark action
 
-_Augmentation_
+__Augmentation Pattern__
 * [Geolocated Remark](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/geolocated-remark.md): presenting location info as overlay.
-  * Placed: on screen as overlay.
+  * _Placed_: on screen as overlay.
 
 ### Diagram
 
@@ -91,8 +94,8 @@ The join function in the expression is gathering the values of `location.place` 
 
 ### Links
 
-* Detailed Docu: [docs/geoLoc.md](docs/geoLoc.md)
-* Source Code: [actions/geoLoc.json](actions/geoLoc.json)
+* _Detailed Docu_: [docs/geoLoc.md](docs/geoLoc.md)
+* _Source Code_: [actions/geoLoc.json](actions/geoLoc.json)
 
 ## Cardinal Direction to North
 
@@ -102,13 +105,13 @@ Presentation of an oriented compass windrose on the floor.
 
 ### AR Patterns
 
-_Behavior_
+_Behavior Pattern_
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the staging ahead action.
 
-_Augmentation_
+_Augmentation Pattern_
 * [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting windrose image 1 m in front of the user.
-  * Placed: initial ahead of the user on the floor.
-  * Aligned: towards the north direction of compass sensor. 
+  * _Placed_: initial ahead of the user on the floor.
+  * _Aligned_: towards the north direction of compass sensor. 
 
 ### Diagram
 
@@ -131,12 +134,12 @@ _Augmentation_
   "$schema": "https://service.metason.net/ar/schemas/action.json",
   "items" : [
     {
+      "type" : "Spot",
+      "subtype" : "Panel",
+      "id" : "net.metason.archi.windrose",
       "asset" : "https://service.metason.net/ar/content/north/windrose.png",
       "attributes" : "wxdxh:1.0x1.0x0.0;",
-      "id" : "net.metason.archi.windrose",
       "name" : "Wind Rose",
-      "subtype" : "Panel",
-      "type" : "Spot"
     }
   ],
   "tasks" : [
@@ -158,12 +161,12 @@ _Augmentation_
 }
 ```
 
-Because the z-axis of the AR scene is oriented towards south, the flat image is oriented towards north when the turn angle isset to 0.
+Because the z-axis of the AR scene is oriented towards south, the flat image is oriented towards north when the turn angle is set to 0.
 
 ### Links
 
-* Detailed Docu: [docs/compass.md](docs/compass.md)
-* Source Code: [actions/compass.json](actions/compass.json)
+* _Detailed Docu_: [docs/compass.md](docs/compass.md)
+* _Source Code_: [actions/compass.json](actions/compass.json)
 
 
 ## Navigational Direction
@@ -174,11 +177,11 @@ Presentation of a direction arrow towards Mecca.
 
 ### AR Patterns
 
-_Behavior_
+__Behavior Patterns__
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the request to the server for getting the direction to mecca.
 * [Request-Response](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/request-response.md): Remote call resulting in asynchronously receiving ECA rules from the server. 
 
-_Augmentation_
+__Augmentation Pattern__
 * [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): placing virtual 3D object `wooden.chest` 1.5 m in front of the user on the floor.
   * Placed: initial ahead of the user on the floor.  
   * Aligned: initial oriented towards the user in view direction and then turned by angle towards Mecca. 
@@ -223,9 +226,9 @@ The REST API call will post user data including lattitude/longitude to the serve
   "$schema": "https://service.metason.net/ar/schemas/action.json",
   "items": [
     {
-      "id": "net.metason.archi.mecca",
       "type" : "Route",
       "subtype" : "Direction",
+      "id": "net.metason.archi.mecca",
       "attributes" : "color:#F0E800;flat:1;",
       "vertices" : [
         [
@@ -262,8 +265,8 @@ A sample server using Flask/Python is available at
 
 ### Links
 
-* Detailed Docu: [docs/navigation.md](docs/navigation.md)
-* Source Code: [actions/navigation.json](actions/navigation.json)
+* _Detailed Docu_: [docs/navigation.md](docs/navigation.md)
+* _Source Code_: [actions/navigation.json](actions/navigation.json)
 
 
 ## References

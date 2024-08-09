@@ -2,20 +2,23 @@
 
 Ahead staging is a technique for presenting 3D content in a way that it is aligned to the spectator’s position and view direction. After the initial staging, users can interact with the virtual scene from their current position or move toward and around the staged content.
 
+* _Use Case_: Spatial Presentation
+* _Technology Platform_: [ARchi VR](../README.md)
+
 ## Instant Ahead Staging
 
 ![screen 1](docs/images/screen1.jpg)
 
 ### AR Patterns
 
-_Behavior_
-* Event: on floor detection
+__Behavior Pattern__
+* _Event_: on floor detection
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the staging ahead action
 
-_Augmentation_
+__Augmentation Pattern__
 * [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting 3D object `red.box`1.5 m  in front of the user.
-  * Placed: initial ahead of the user on the floor.
-  * Aligned: initial towards the user in view direction.
+  * _Placed_: initial ahead of the user on the floor.
+  * _Aligned_: initial towards the user in view direction.
 
 ### Diagram
 
@@ -30,10 +33,10 @@ _Augmentation_
   "$schema": "https://service.metason.net/ar/schemas/action.json",
   "items" : [
     {
-      "attributes" : "color:#FF0000; wxdxh:0.55x0.55x0.55; ratio:0.2",
-      "id" : "red.box",
+      "type" : "Geometry",
       "subtype" : "Cube",
-      "type" : "Geometry"
+      "id" : "red.box",
+      "attributes" : "color:#FF0000; wxdxh:0.55x0.55x0.55; ratio:0.2"
     }
   ],
   "tasks" : [
@@ -48,8 +51,8 @@ _Augmentation_
 
 ### Links
 
-* Detailed Docu: [docs/instantStaging.md](docs/instantStaging.md)
-* Source Code: [actions/instantStaging.json](actions/instantStaging.json)
+* _Detailed Docu_: [docs/instantStaging.md](docs/instantStaging.md)
+* _Source Code_: [actions/instantStaging.json](actions/instantStaging.json)
 
 ## Multiple Ahead Staging
 
@@ -57,14 +60,14 @@ _Augmentation_
 
 ### AR Patterns
 
-_Behavior_
-* Event: on floor detection
+__Behavior Pattern__
+* _Event_: on floor detection
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of a list of staging ahead actions.
 
-_Augmentation_
+__Augmentation Patterns__
 * [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting three 3D objects 1.5 m in front of the user at differnt heights.
-  * Placed: initial ahead of the user. The first on the floor, the others above it.
-  * Aligned: initial towards the user in view direction. 
+  * _Placed_: initial ahead of the user. The first on the floor, the others above it.
+  * _Aligned_: initial towards the user in view direction. 
 
 ### Diagram
 
@@ -87,25 +90,25 @@ _Augmentation_
   "$schema": "https://service.metason.net/ar/schemas/action.json",
   "items" : [
     {
-      "attributes" : "color:#FF0000; wxdxh:1.1x1.1x0.25; rays:5; ratio: 0.6",
-      "id" : "red.star",
-      "isLocked" : true,
+      "type" : "Geometry",
       "subtype" : "Star",
-      "type" : "Geometry"
+      "id" : "red.star",
+      "attributes" : "color:#FF0000; wxdxh:1.1x1.1x0.25; rays:5; ratio: 0.6",
+      "isLocked" : true
     },
     {
-      "attributes" : "color:#996622; wxdxh:0.2x0.2x0.5",
-      "id" : "brown.cylinder",
-      "isLocked" : true,
+      "type" : "Geometry",
       "subtype" : "Cylinder",
-      "type" : "Geometry"
+      "id" : "brown.cylinder",
+      "attributes" : "color:#996622; wxdxh:0.2x0.2x0.5",
+      "isLocked" : true
     },
     {
-      "attributes" : "color:#00CC00; wxdxh:0.75x0.75x0.75",
-      "id" : "green.sphere",
-      "isLocked" : true,
-      "subtype" : "Sphere",
       "type" : "Geometry"
+      "subtype" : "Sphere",
+      "id" : "green.sphere",
+      "attributes" : "color:#00CC00; wxdxh:0.75x0.75x0.75",
+      "isLocked" : true
     }
   ],
   "tasks" : [
@@ -130,8 +133,8 @@ _Augmentation_
 
 ### Links
 
-* Detailed Docu: [docs/multipleStaging.md](docs/multipleStaging.md)
-* Source Code: [actions/multipleStaging.json](actions/multipleStaging.json)
+* _Detailed Docu_: [docs/multipleStaging.md](docs/multipleStaging.md)
+* _Source Code_: [actions/multipleStaging.json](actions/multipleStaging.json)
 
 ## Indirect Ahead Staging
 
@@ -139,14 +142,14 @@ _Augmentation_
 
 ### AR Patterns
 
-_Behavior_
-* Event: on tapping
+__Behavior Pattern__
+* _Event_: on tapping
 * [Conditional Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/conditional-reaction.md): Pressing the overlay button (+) in the bottom right corner sets a data flag. If the data flag becomes the value of 1 the ECA rule is executing the ahead staging action that places the 3D object into the scene.
 
-_Augmentation_
+__Augmentation Pattern__
 * [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): placing virtual 3D object `wooden.chest` 1.5 m in front of the user on the floor.
-  * Placed: Placed: initial ahead of the user on the floor.
-  * Aligned: initial towards the user in view direction.
+  * _Placed_: initial ahead of the user on the floor.
+  * _Aligned_: initial towards the user in view direction.
 
 ### Diagram
 
@@ -165,19 +168,19 @@ _Augmentation_
   "$schema": "https://service.metason.net/ar/schemas/action.json",
   "items" : [
     {
-      "asset" : "https://service.metason.net/ar/content/assets/3D/chest.usdz",
-      "attributes" : "wxdxh:0.77x0.58x0.56;",
-      "id" : "wooden.chest",
+      "type" : "3D Object",
       "subtype" : "Interior",
-      "type" : "3D Object"
+      "id" : "wooden.chest",
+      "asset" : "https://service.metason.net/ar/content/assets/3D/chest.usdz",
+      "attributes" : "wxdxh:0.77x0.58x0.56;"
     },
     {
+      "type" : "Overlay",
+      "subtype" : "Image",
+      "id" : "overlay.button",
       "asset" : "https://service.metason.net/ar/extension/images/plus.png",
       "attributes" : "right:20;bottom:20;width:40;height:40;",
-      "content" : "on:tap= assign('data.flag', 1)",
-      "id" : "overlay.button",
-      "subtype" : "Image",
-      "type" : "Overlay"
+      "content" : "on:tap= assign('data.flag', 1)"
     }
   ],
   "tasks" : [
@@ -198,8 +201,8 @@ _Augmentation_
 
 ### Links
 
-* Detailed Docu: [docs/indirectStaging.md](docs/indirectStaging.md)
-* Source Code: [actions/indirectStaging.json](actions/indirectStaging.json)
+* _Detailed Docu_: [docs/indirectStaging.md](docs/indirectStaging.md)
+* _Source Code_: [actions/indirectStaging.json](actions/indirectStaging.json)
 
 ## References
 

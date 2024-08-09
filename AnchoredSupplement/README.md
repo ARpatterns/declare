@@ -2,19 +2,22 @@
 
 Provide additional information that is aligned with a detected entity.
 
-![screen 1](docs/images/screens.jpg)
+* _Use Case_: Anchored Complement
+* _Technology Platform_: [ARchi VR](../README.md)
+
+![screen 1](../screens/supplement.gif)
 
 ## AR Patterns
 
-_Behavior_
-* Event: on image detection
+__Behavior Patterns__
+* _Event_: on image detection
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the superimposition action
-* [Conditional Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/conditional-reaction.md): remove superimposed object when nolonger visible.
+* [Conditional Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/conditional-reaction.md): remove superimposed object when no longer visible.
 
-_Augmentation_
+__Augmentation Pattern__
 * [Anchored Supplement](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/anchored-supplement.md): Presentation of 3D content aligned to detected entity for enhancement.
-  * Placed: on detected image.
-  * Aligned: with detected image.
+  * _Placed_: on detected image.
+  * _Aligned_: with detected image.
 
 ## Diagram
 
@@ -120,10 +123,9 @@ _Augmentation_
 
 ## Links
 
-* Detailed Docu: [docs/supplement.md](docs/supplement.md)
-* Source Code: [actions/supplement.json](actions/supplement.json)
-## Links
-- ARchi VR [Technical Documentation](https://service.metason.net/ar/docu/)
+* _Detailed Docu_: [docs/supplement.md](docs/supplement.md)
+* _Source Code_: [actions/supplement.json](actions/supplement.json)
+
 
 ## References
 
