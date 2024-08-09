@@ -2,7 +2,9 @@
 
 
 ## Technology Platform: ARchi VR
+
 <img src="screens/archi_logo.png" width="120" align="right">
+
 - _Software Stack_: ARchi VR App based on Apple ARKit, DeclARe scripting
 - _Supported Devices_: handheld iOS devices (iPhones, iPads)
 - _Editor Environment_: ARchi Composer 
