@@ -2,7 +2,7 @@
 
 Superimposition aims to cover a detected entity with a virtual object so that the real object is no longer visible.
 
-* _Use Case_: Anchored Complement
+* _Use Case_: Spatial Presentation
 * _Technology Platform_: [ARchi VR](../README.md)
 
 ![screen 1](docs/images/screens.jpg)
