@@ -8,7 +8,7 @@
 - _Software Stack_: ARchi VR App based on Apple ARKit, DeclARe scripting
 - _Supported Devices_: handheld iOS devices (iPhones, iPads)
 - _Editor Environment_: ARchi Composer 
-- _Development Method_: declarative low-code
+- _Development Method_: declarative low-code using Event-Condition-Action rules
 
 
 ## DeclARe - Declarative Creation of AR Content 
