@@ -1,5 +1,7 @@
 # Anchored Supplement
 
+![anchored supplement](docs/images/AnchoredSupplement.jpg)
+
 Provide additional information that is aligned with a detected entity.
 
 * _Use Case_: Anchored Complement

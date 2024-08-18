@@ -1,5 +1,7 @@
 # Geolocated Remark
 
+![Geolocated Remark](docs/images/GeolocatedRemark.jpg)
+
 A geolocated remark is based on location data (latitude and longitude) from the Global Positioning System (GPS) or by georeferenced address data (i.e., country, city, street, building name).
 
 * _Use Case_: - Immersive Site Navigation
@@ -69,7 +71,7 @@ __Augmentation Pattern__
 
 ### Runtime Context
 
-The `do:setValue` expression is accessing variables from the runtime context of the current AR session. A full context is stored as a snapshot in [context.json](context.json). The location data as excerpt:
+The `do:setText` expression is accessing variables from the runtime context of the current AR session. A full context is stored as a snapshot in [context.json](context.json). The location data as excerpt:
 
 ```json
   ...

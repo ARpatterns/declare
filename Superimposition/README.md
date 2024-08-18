@@ -1,11 +1,14 @@
 # Superimposition
 
+![Superimposition](docs/images/Superimposition.jpg)
+
 Superimposition aims to cover a detected entity with a virtual object so that the real object is no longer visible.
 
 * _Use Case_: Spatial Presentation
 * _Technology Platform_: [ARchi VR](../README.md)
 
-![screen 1](docs/images/screens.jpg)
+![screens](docs/images/screens.jpg)
+![movie](../screens/substitute.gif)
 
 ## AR Patterns
 
