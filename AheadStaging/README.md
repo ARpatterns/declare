@@ -21,6 +21,7 @@ __Augmentation Pattern__
 * [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting 3D object `red.box`1.5 m  in front of the user.
   * _Placed_: initial ahead of the user on the floor.
   * _Aligned_: initial towards the user in view direction.
+  * _Pivot_: ARchi VR objects in the local coordinate system are centered on the ground floor. If the object is rotated around the AR anchor in the world coordinate system, it turns by it's center up axis.
 
 ### Diagram
 
