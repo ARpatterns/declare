@@ -4,8 +4,10 @@
 
 A geolocated remark is based on location data (latitude and longitude) from the Global Positioning System (GPS) or by georeferenced address data (i.e., country, city, street, building name).
 
-* _Use Case_: - Immersive Site Navigation
+* _Use Case_: Immersive Site Navigation
 * _Technology Platform_: [ARchi VR](../README.md)
+* _Device Type_: handheld 
+* _Vision System_: world camera 
 
 ## Geolocated Information
 
@@ -17,6 +19,7 @@ Presentation of location info as overlay.
 
 __Behavior Pattern__
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the geolocated remark action
+  * _Event_: on start 
 
 __Augmentation Pattern__
 * [Geolocated Remark](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/geolocated-remark.md): presenting location info as overlay.
@@ -24,15 +27,15 @@ __Augmentation Pattern__
 
 ### Diagram
 
- | on:command |  &rarr; | do:skip |
+ | on:start |  &rarr; | do:skip |
  |---|---|---|
 > floor detection ⏭
  
- | on:command |  &rarr; | do:add |
+ | on:start |  &rarr; | do:add |
  |---|---|---|
 > 'overlay.label' ➕
  
- | on:command |  &rarr; | do:setText |
+ | on:stable |  &rarr; | do:setText |
  |---|---|---|
 > 'overlay.label': text = join({'Near', location.place, 'in', location.city}, ' ')
 

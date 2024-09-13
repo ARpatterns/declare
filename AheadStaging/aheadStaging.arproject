@@ -1,20 +1,18 @@
 {
-  "desc" : "Examples of Ahead Staging Pattern",
-  "sourceControl" : "",
-  "remoteServer" : "",
+  "name" : "aheadStaging",
   "nodes" : [
     {
-      "relPath" : "aheadStaging.arproject",
+      "name" : "Settings",
+      "children" : null,
       "type" : "Project",
       "comment" : "",
-      "name" : "Settings",
-      "children" : null
+      "relPath" : "aheadStaging.arproject"
     },
     {
       "name" : "README",
       "comment" : "",
-      "type" : "README",
       "relPath" : "README.md",
+      "type" : "README",
       "children" : null
     },
     {
@@ -22,104 +20,106 @@
       "children" : [
         {
           "comment" : "",
+          "relPath" : "docs/images/",
           "children" : [
             {
-              "type" : "Image",
+              "comment" : "",
+              "relPath" : "docs/images/wooden.chest.png",
               "name" : "wooden.chest.png",
               "children" : null,
-              "relPath" : "docs/images/wooden.chest.png",
-              "comment" : ""
+              "type" : "Image"
             },
             {
-              "relPath" : "docs/images/red.box.png",
               "comment" : "",
               "children" : null,
-              "type" : "Image",
-              "name" : "red.box.png"
+              "name" : "red.box.png",
+              "relPath" : "docs/images/red.box.png",
+              "type" : "Image"
             },
             {
-              "comment" : "",
               "name" : "red.star.png",
               "children" : null,
               "type" : "Image",
+              "comment" : "",
               "relPath" : "docs/images/red.star.png"
             },
             {
+              "comment" : "",
               "type" : "Image",
               "name" : "brown.cylinder.png",
               "relPath" : "docs/images/brown.cylinder.png",
-              "children" : null,
-              "comment" : ""
+              "children" : null
             },
             {
-              "comment" : "",
               "relPath" : "docs/images/green.sphere.png",
               "name" : "green.sphere.png",
-              "children" : null,
-              "type" : "Image"
+              "comment" : "",
+              "type" : "Image",
+              "children" : null
             }
           ],
           "name" : "images",
-          "type" : "Images",
-          "relPath" : "docs/images/"
+          "type" : "Images"
         },
         {
-          "name" : "instantStaging.md",
+          "comment" : "",
           "relPath" : "docs/instantStaging.md",
           "children" : null,
-          "comment" : "",
+          "name" : "instantStaging.md",
           "type" : "Document"
         },
         {
           "children" : null,
-          "name" : "multipleStaging.md",
           "relPath" : "docs/multipleStaging.md",
+          "type" : "Document",
           "comment" : "",
-          "type" : "Document"
+          "name" : "multipleStaging.md"
         },
         {
-          "comment" : "",
-          "type" : "Document",
           "name" : "indirectStaging.md",
-          "relPath" : "docs/indirectStaging.md",
-          "children" : null
+          "type" : "Document",
+          "children" : null,
+          "comment" : "",
+          "relPath" : "docs/indirectStaging.md"
         }
       ],
       "relPath" : "docs/",
-      "comment" : "",
-      "type" : "Documents"
+      "type" : "Documents",
+      "comment" : ""
     },
     {
       "name" : "actions",
+      "relPath" : "actions",
       "children" : [
         {
           "children" : null,
-          "type" : "Action",
           "name" : "instantStaging.json",
+          "type" : "Action",
           "comment" : "",
           "relPath" : "actions/instantStaging.json"
         },
         {
+          "children" : null,
           "relPath" : "actions/multipleStaging.json",
-          "comment" : "",
-          "type" : "Action",
           "name" : "multipleStaging.json",
-          "children" : null
+          "comment" : "",
+          "type" : "Action"
         },
         {
+          "relPath" : "actions/indirectStaging.json",
           "children" : null,
-          "type" : "Action",
-          "comment" : "",
           "name" : "indirectStaging.json",
-          "relPath" : "actions/indirectStaging.json"
+          "comment" : "",
+          "type" : "Action"
         }
       ],
-      "comment" : "",
-      "relPath" : "actions",
-      "type" : "Actions"
+      "type" : "Actions",
+      "comment" : ""
     }
   ],
+  "desc" : "Examples of Ahead Staging Pattern",
+  "sourceControl" : "",
   "idPrefix" : "",
-  "mainAction" : "",
-  "name" : "aheadStaging"
+  "remoteServer" : "",
+  "mainAction" : ""
 }

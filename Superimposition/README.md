@@ -6,6 +6,8 @@ Superimposition aims to cover a detected entity with a virtual object so that th
 
 * _Use Case_: Spatial Presentation
 * _Technology Platform_: [ARchi VR](../README.md)
+* _Device Type_: handheld 
+* _Vision System_: world camera 
 
 ![screens](docs/images/screens.jpg)
 ![movie](../screens/substitute.gif)
@@ -13,8 +15,8 @@ Superimposition aims to cover a detected entity with a virtual object so that th
 ## AR Patterns
 
 __Behavior Patterns__
-* _Event_: on image detection
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the superimposition action
+  * _Event_: on [image](images/JazzIsBack.jpg) detection
 * [Conditional Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/conditional-reaction.md): remove superimposed object when nolonger visible.
 
 __Augmentation Pattern__
@@ -104,6 +106,8 @@ __Augmentation Pattern__
 
 * _Detailed Docu_: [docs/flipImage.md](docs/flipImage.md)
 * _Source Code_: [actions/flipImage.json](actions/flipImage.json)
+* _Assets_: [JazzIsBack.jpg](images/JazzIsBack.jpg), [JazzIsDown.jpg](images/JazzIsDown.jpg)
+
 
 ## References
 

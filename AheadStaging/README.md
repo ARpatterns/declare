@@ -6,6 +6,8 @@ Ahead staging is a technique for presenting 3D content in a way that it is align
 
 * _Use Case_: Spatial Presentation
 * _Technology Platform_: [ARchi VR](../README.md)
+* _Device Type_: handheld 
+* _Vision System_: world camera 
 
 ## Instant Ahead Staging
 
@@ -14,11 +16,11 @@ Ahead staging is a technique for presenting 3D content in a way that it is align
 ### AR Patterns
 
 __Behavior Pattern__
-* _Event_: on floor detection
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the staging ahead action
+  * _Event_: on floor detection
 
 __Augmentation Pattern__
-* [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting 3D object `red.box`1.5 m  in front of the user.
+* [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting 3D object `red.box` 1.5 m  in front of the user.
   * _Placed_: initial ahead of the user on the floor.
   * _Aligned_: initial towards the user in view direction.
   * _Pivot_: ARchi VR objects in the local coordinate system are centered on the ground floor. If the object is rotated around the AR anchor in the world coordinate system, it turns by it's center up axis.
@@ -64,8 +66,8 @@ __Augmentation Pattern__
 ### AR Patterns
 
 __Behavior Pattern__
-* _Event_: on floor detection
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of a list of staging ahead actions.
+  * _Event_: on floor detection
 
 __Augmentation Patterns__
 * [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): presenting three 3D objects 1.5 m in front of the user at differnt heights.
@@ -146,8 +148,8 @@ __Augmentation Patterns__
 ### AR Patterns
 
 __Behavior Pattern__
-* _Event_: on tapping
 * [Conditional Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/conditional-reaction.md): Pressing the overlay button (+) in the bottom right corner sets a data flag. If the data flag becomes the value of 1 the ECA rule is executing the ahead staging action that places the 3D object into the scene.
+  * _Event_: on tapping
 
 __Augmentation Pattern__
 * [Ahead Staging](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/ahead-staging.md): placing virtual 3D object `wooden.chest` 1.5 m in front of the user on the floor.

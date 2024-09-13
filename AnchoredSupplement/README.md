@@ -6,14 +6,16 @@ Provide additional information that is aligned with a detected entity.
 
 * _Use Case_: Anchored Complement
 * _Technology Platform_: [ARchi VR](../README.md)
-
+* _Device Type_: handheld 
+* _Vision System_: world camera 
+  
 ![screen 1](../screens/supplement.gif)
 
 ## AR Patterns
 
 __Behavior Patterns__
-* _Event_: on image detection
 * [Instant Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/instant-reaction.md): Immediate execution of the superimposition action
+  * _Event_: on [image](images/JazzIsBack.jpg) detection
 * [Conditional Reaction](https://github.com/ARpatterns/catalog/blob/main/behavioral-patterns/conditional-reaction.md): remove superimposed object when no longer visible.
 
 __Augmentation Pattern__
@@ -23,7 +25,7 @@ __Augmentation Pattern__
 
 ## Diagram
 
- | on:call |  &rarr; | do:detect:image |
+ | on:start |  &rarr; | do:detect:image |
  |---|---|---|
  
 > Install image detector 0.29x0.40 &larr; _on:response_  •••  $SERVER/images/JazzIsBack.jpg 👁
@@ -127,7 +129,7 @@ __Augmentation Pattern__
 
 * _Detailed Docu_: [docs/supplement.md](docs/supplement.md)
 * _Source Code_: [actions/supplement.json](actions/supplement.json)
-
+* _Assets_: [JazzIsBack.jpg](images/JazzIsBack.jpg)
 
 ## References
 
