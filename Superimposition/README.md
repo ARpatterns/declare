@@ -24,7 +24,7 @@ __Augmentation Pattern__
   * _Placed_: on detected image.
   * _Aligned_: with detected image.
 
-## Diagram
+## ECA Diagram
 
  | on:call |  &rarr; | do:detect:image |
  |---|---|---|
@@ -116,4 +116,4 @@ __Augmentation Pattern__
 
 - ARchi VR [Technical Documentation](https://service.metason.net/ar/docu/)
 - ARchi VR [App](https://archi.metason.net)
-- AR Pattern [Diagram](https://github.com/ARpatterns/diagram)
+- ECA [Diagram](https://github.com/ARpatterns/diagram)

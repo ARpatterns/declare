@@ -25,7 +25,7 @@ __Augmentation Pattern__
 * [Geolocated Remark](https://github.com/ARpatterns/catalog/blob/main/augmentation-patterns/geolocated-remark.md): presenting location info as overlay.
   * _Placed_: on screen as overlay.
 
-### Diagram
+### ECA Diagram
 
  | on:start |  &rarr; | do:skip |
  |---|---|---|
@@ -118,7 +118,7 @@ _Augmentation Pattern_
   * _Placed_: initial ahead of the user on the floor.
   * _Aligned_: towards the north direction of compass sensor. 
 
-### Diagram
+### ECA Diagram
 
  | on:command |  &rarr; | do:clear |
  |---|---|---|
@@ -191,7 +191,7 @@ __Augmentation Pattern__
   * Placed: initial ahead of the user on the floor.  
   * Aligned: initial oriented towards the user in view direction and then turned by angle towards Mecca. 
 
-### Diagram
+### ECA Diagram
 
  | on:command |  &rarr; | do:clear |
  |---|---|---|
@@ -281,4 +281,4 @@ A sample server using Flask/Python is available at
 
 - ARchi VR [Technical Documentation](https://service.metason.net/ar/docu/)
 - ARchi VR [App](https://archi.metason.net)
-- AR Pattern [Diagram](https://github.com/ARpatterns/diagram)
+- ECA [Diagram](https://github.com/ARpatterns/diagram)

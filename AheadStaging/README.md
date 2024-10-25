@@ -25,7 +25,7 @@ __Augmentation Pattern__
   * _Aligned_: initial towards the user in view direction.
   * _Pivot_: ARchi VR objects in the local coordinate system are centered on the ground floor. If the object is rotated around the AR anchor in the world coordinate system, it turns by it's center up axis.
 
-### Diagram
+### ECA Diagram
 
  | on:command |  &rarr; | do:add ahead 0 0 -1.2 |
  |---|---|---|
@@ -74,7 +74,7 @@ __Augmentation Patterns__
   * _Placed_: initial ahead of the user. The first on the floor, the others above it.
   * _Aligned_: initial towards the user in view direction. 
 
-### Diagram
+### ECA Diagram
 
  | on:command |  &rarr; | do:add ahead 0 0 -1.5 |
  |---|---|---|
@@ -156,7 +156,7 @@ __Augmentation Pattern__
   * _Placed_: initial ahead of the user on the floor.
   * _Aligned_: initial towards the user in view direction.
 
-### Diagram
+### ECA Diagram
 
  | on:command |  &rarr; | do:add |
  |---|---|---|
@@ -216,4 +216,4 @@ __Augmentation Pattern__
 
 - ARchi VR [Technical Documentation](https://service.metason.net/ar/docu/)
 - ARchi VR [App](https://archi.metason.net)
-- AR Pattern [Diagram](https://github.com/ARpatterns/diagram)
+- ECA [Diagram](https://github.com/ARpatterns/diagram)
